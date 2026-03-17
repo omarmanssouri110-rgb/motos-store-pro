@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motos Zone Pro - المتجر المتكامل</title>
+    <style>
+        /* إعدادات الصفحة الأساسية */
+        body { font-family: sans-serif; background-color: #000; color: white; margin: 0; padding: 20px; display: flex; justify-content: center; }
+        
+        /* حاوية المتجر الرئيسية */
+        .store-container { width: 100%; max-width: 1000px; text-align: center; }
+        
+        /* عنوان المتجر */
+        .store-title { color: #fff; font-size: 32px; text-transform: uppercase; margin-bottom: 30px; border-bottom: 2px solid #ff3e3e; display: inline-block; padding-bottom: 10px; }
+        
+        /* شبكة المنتجات (Grid) */
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        
+        /* تصميم كرت المنتج (الأسود الفخم) */
+        .card { background: #111; border-radius: 20px; overflow: hidden; border: 1px solid #333; box-shadow: 0 5px 15px rgba(0,0,0,0.6); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.8); border-color: #ff3e3e; }
+        
+        /* صندوق الصورة */
+        .img-box { width: 100%; height: 200px; background: #222; overflow: hidden; }
+        img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .card:hover img { transform: scale(1.1); }
+        
+        /* معلومات المنتج */
+        .info { padding: 15px; }
+        h3 { font-size: 18px; margin: 0 0 10px 0; color: #fff; text-transform: uppercase; height: 40px; overflow: hidden; }
+        .desc { color: #888; font-size: 13px; margin: 5px 0; line-height: 1.4; height: 55px; overflow: hidden; }
+        .price { color: #ff3e3e; font-size: 24px; font-weight: bold; margin: 10px 0; }
+        
+        /* أزرار التواصل */
+        .btns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 15px; }
+        .btn { padding: 12px; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 14px; transition: 0.2s; text-align: center; }
+        .wa { background: #25d366; color: white; }
+        .call { background: #fff; color: #000; }
+        .btn:active { transform: scale(0.95); }
+        
+        /* إعدادات الشاشات الصغيرة */
+        @media (max-width: 600px) {
+            .products-grid { grid-template-columns: 1fr; }
+            .store-title { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="store-container">
+    <h1 class="store-title">Motos Zone Pro</h1>
+    
+    <div class="products-grid">
+        
+        <div class="card">
+            <div class="img-box">
+                <img src="https://images.triumphmotorcycles.co.uk/media-library/images/motorcycles/sport/r125/2023/yamaha-r125-icon-blue-studio-001.jpg" alt="Yamaha R125">
+            </div>
+            <div class="info">
+                <h3>Yamaha YZF-R125</h3>
+                <p class="desc">دراجة رياضية احترافية بتصميم R-Series. تجمع بين الأناقة والقوة الاقتصادية.</p>
+                <div class="price">54,000 درهم</div>
+                <div class="btns">
+                    <a href="https://wa.me/212667164684" class="btn wa">واتساب</a>
+                    <a href="tel:0667164684" class="btn call">اتصال</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="img-box">
+                <img src="https://images.triumphmotorcycles.co.uk/media-library/images/motorcycles/sport/cbr600rr/2021/cbr600rr-red-studio-001.jpg" alt="Honda CBR600RR">
+            </div>
+            <div class="info">
+                <h3>Honda CBR600RR</h3>
+                <p class="desc">أسطورة السباقات بأداء مذهل. دراجة رباعية الأسطوانات مصممة للحلبات والطرقات.</p>
+                <div class="price">125,000 درهم</div>
+                <div class="btns">
+                    <a href="https://wa.me/212667164684" class="btn wa">واتساب</a>
+                    <a href="tel:0667164684" class="btn call">اتصال</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="img-box">
+                <img src="https://images.triumphmotorcycles.co.uk/media-library/images/motorcycles/sport/ninja-400/2022/ninja-400-green-studio-001.jpg" alt="Kawasaki Ninja 400">
+            </div>
+            <div class="info">
+                <h3>Kawasaki Ninja 400</h3>
+                <p class="desc">دراجة مثالية للمبتدئين والمحترفين. تجمع بين الوزن الخفيف والأداء السلس.</p>
+                <div class="price">68,000 درهم</div>
+                <div class="btns">
+                    <a href="https://wa.me/212667164684" class="btn wa">واتساب</a>
+                    <a href="tel:0667164684" class="btn call">اتصال</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="img-box">
+                <img src="https://images.triumphmotorcycles.co.uk/media-library/images/motorcycles/sport/gsx-r1000r/2021/gsx-r1000r-blue-studio-001.jpg" alt="Suzuki GSX-R1000R">
+            </div>
+            <div class="info">
+                <h3>Suzuki GSX-R1000R</h3>
+                <p class="desc">قوة هائلة وسيطرة تامة. دراجة السوبربايك المجهزة بأحدث التقنيات.</p>
+                <div class="price">189,000 درهم</div>
+                <div class="btns">
+                    <a href="https://wa.me/212667164684" class="btn wa">واتساب</a>
+                    <a href="tel:0667164684" class="btn call">اتصال</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+                      </html>
+                      
